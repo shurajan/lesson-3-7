@@ -1,4 +1,4 @@
-package Test;
+package com.geekbrains.Test;
 
 import java.lang.reflect.Method;
 

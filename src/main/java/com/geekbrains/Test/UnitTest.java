@@ -1,4 +1,4 @@
-package Test;
+package com.geekbrains.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -9,12 +9,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class UnitTest {
-    private static int beforeSuiteCounter = 0;
-    private static int afterSuiteCounter = 0;
+
 
     public static void test(Class testClass) {
         Object testClassObject = null;
         Constructor counstructor = null;
+        int beforeSuiteCounter = 0;
+        int afterSuiteCounter = 0;
+
 
         List<MethodContainer> testCases = new ArrayList<>();
 

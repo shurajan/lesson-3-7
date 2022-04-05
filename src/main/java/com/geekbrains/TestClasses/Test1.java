@@ -1,14 +1,11 @@
-import Test.Test;
-import Test.BeforeSuite;
-import Test.AfterSuite;
-import Test.UnitTest;
+package com.geekbrains.TestClasses;
 
-public class Lesson37 {
+import com.geekbrains.Test.Test;
+import com.geekbrains.Test.BeforeSuite;
+import com.geekbrains.Test.AfterSuite;
+import com.geekbrains.Test.UnitTest;
 
-    public static void main(String[] args) {
-        UnitTest ut = new UnitTest();
-        ut.test(Lesson37.class);
-    }
+public class Test1 {
 
     @BeforeSuite
     public void init() {
@@ -43,6 +40,11 @@ public class Lesson37 {
 
     public void Test6() {
         System.out.println("НЕ ВЫЗЫВАЕТСЯ Test 6");
+    }
+
+    @Test
+    public void Test7() {
+        System.out.println("Test 7");
     }
 
     @AfterSuite
