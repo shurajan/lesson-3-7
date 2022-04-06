@@ -17,9 +17,6 @@ public class UnitTest {
         int beforeSuiteCounter = 0;
         int afterSuiteCounter = 0;
 
-
-
-
         try {
             counstructor = testClass.getConstructor();
             testClassObject = counstructor.newInstance();
