@@ -18,7 +18,7 @@ public class UnitTest {
         int afterSuiteCounter = 0;
 
 
-        List<MethodContainer> testCases = new ArrayList<>();
+
 
         try {
             counstructor = testClass.getConstructor();
@@ -29,6 +29,7 @@ public class UnitTest {
         }
 
         Method[] methods = testClass.getDeclaredMethods();
+        List<MethodContainer> testCases = new ArrayList<>(methods.length);
         for (Method method : methods) {
             if (method.getAnnotation(BeforeSuite.class) != null) {
                 beforeSuiteCounter++;
